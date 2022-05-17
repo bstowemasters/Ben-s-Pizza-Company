@@ -1,0 +1,64 @@
+.backgroundImage {
+    margin: 0px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 0px;
+    top: 425px;
+}
+
+#firstLastNameInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    color: white;
+    background-color: darkgreen;
+    font-size: 30px;
+}
+
+input {
+    width: 75%;
+    font-size: 30px;
+}
+
+.formBoxText {
+    font-size: 30px;
+    color: white;
+}
+
+#formBoxContent {
+    height: calc(743px - 40px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#formBox {
+    background-color: dimgray;
+    width: 400px;
+    height: 743px;
+}
+
+#textBox {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: dimgray;
+    width: 600px;
+    height: 500px;
+}

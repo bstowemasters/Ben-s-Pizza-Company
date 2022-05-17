@@ -1,0 +1,51 @@
+.container {
+	border: 1px solid black;
+	margin: 30px;
+	width: 600px;
+	font-size: 4em;
+	box-sizing: border-box;
+}
+
+.container div {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+/* Ignore styling above this. This simply styles the container and div create equal squares */
+/* Solution from here, note .container adds additional styling to the above selector */
+
+.container {
+	
+}
+
+.red {
+	background-color: red;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.gray {
+	background-color: gray;
+}
+
+.white {
+	background-color: white;
+}

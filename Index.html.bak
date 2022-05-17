@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+		<title>PLEASE ENTER THE PAGE TITLE ETC HOME / ABOUT / PIZZAS</title>
+	</head>
+
+	<header>
+		<nav>
+			<h1> Put na</h1>
+		</nav>
+	</header>
+	
+	<body>
+		<h1>Main page content</h1>
+	</body>
+	
+	<footer>
+		<p>Footer content</p>
+	<footer>
+</html>

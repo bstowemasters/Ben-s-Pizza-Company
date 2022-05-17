@@ -1,0 +1,106 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 1280px; /* Looking here to center page */
+  margin: 0 auto;
+}
+
+nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden; /* Prevents clipping issue for border radius */
+  border-radius: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container > * {
+  white-space: nowrap;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "head" "midd" "bott";
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  height: 450px;
+
+}
+
+.upper  { grid-area: head; }
+.img    { grid-area: midd; }
+.bottom { grid-area: bott; }
+
+.upper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+  "home title title title title nutrition contact about"
+  ;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.upper h2{
+  color: white;
+}
+
+.bottom {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "Pizza Drink Side Dessert"
+  ;
+  justify-items: center;
+  align-items: center;
+  background-color: black;
+}
+
+.bottom a {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.home       { grid-area: home;      }
+.title      { grid-area: title;     }
+.nutrition  { grid-area: nutrition; }
+.contact    { grid-area: contact;   }
+.about      { grid-area: about;     }
+
+.Pizzas   { grid-area: Pizza;   }
+.Drinks   { grid-area: Drink;   }
+.Sides    { grid-area: Side;    }
+.Desserts { grid-area: Dessert; }
+
+.nutrition, .contact, .about {
+  justify-self: end;
+}
+
+li {
+  padding: 20px;
+}
+
+li a {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} 
+
+li a {
+  padding: 10px;
+  border-radius: 10px;
+
+  background-color: #FFFFFF;
+}
