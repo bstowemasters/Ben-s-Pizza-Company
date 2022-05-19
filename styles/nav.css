@@ -13,6 +13,10 @@ nav {
   border-radius: 30px;
 }
 
+.mobile {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -30,6 +34,10 @@ a {
   margin: 0;
   height: 450px;
 
+}
+
+.img {
+  min-width: 850px;
 }
 
 .upper  { grid-area: head; }
@@ -103,4 +111,21 @@ li a {
   border-radius: 10px;
 
   background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 899px) and (min-width: 480px) {
+  .upper {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+    "home title title more";
+  }
+  
+  .nutrition, .contact, .about, .Pizzas, .Drinks, .Sides, .Desserts 
+  { display:none; }
+
+  .mobile { display: contents; }
+  .home { grid-area: home; }
+  .title { grid-area: title; }
+  .mobile { grid-area: more; }
+  
 }
