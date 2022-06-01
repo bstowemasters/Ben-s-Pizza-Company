@@ -19,16 +19,18 @@ section {
     border-radius: 20px;
     
 }
-
-.left {
-    max-width: 600px;
+a {
+    color: aqua;
 }
 
-.right > * {
+article > * {
     color: white;
-    max-width: 600px;
 }
 
-input {
-    width: 50%;
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
 }
