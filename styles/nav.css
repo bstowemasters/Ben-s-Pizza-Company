@@ -13,7 +13,7 @@ nav {
   border-radius: 30px;
 }
 
-.mobile {
+.mobile, .mob {
   display: none;
 }
 
@@ -115,17 +115,45 @@ li a {
 
 @media screen and (max-width: 899px) and (min-width: 480px) {
   .upper {
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas:
-    "home title title more";
+    display:flex;
+    align-items: center;
+    justify-items: center;
+
   }
-  
-  .nutrition, .contact, .about, .Pizzas, .Drinks, .Sides, .Desserts 
+
+  .img{
+    display: none;
+
+  }
+  img.mob {
+    display: block;
+    grid-area: midd;
+    min-width:400px;
+  }
+
+  .mobile { 
+    margin-right: auto;
+    display: contents;
+  }
+
+  .mobile img {
+    height:32px;
+
+  }
+  li a {
+    background: none; /* Removes white blob from menu element */
+    margin-right: 30px;
+  }
+ 
+  .nutrition, .contact, .about, .Pizzas, .Drinks, .Sides, .home, .Desserts 
   { display:none; }
 
-  .mobile { display: contents; }
-  .home { grid-area: home; }
-  .title { grid-area: title; }
-  .mobile { grid-area: more; }
-  
+  .title { grid-area: title; }  
+  .title {
+    padding: 20px;
+  }
+  h2.title{
+    margin: 0;
+  }
+
 }

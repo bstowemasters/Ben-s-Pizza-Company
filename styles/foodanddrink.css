@@ -26,7 +26,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px auto auto auto 100px;
-    grid-gap: 20px;
+    grid-gap: 40px;
     grid-template-areas:
     "tit tit tit"
     "art art art"
@@ -68,7 +68,7 @@ button {
     }
 }
 
-@media screen and (max-width: 900px) and (min-width: 0px){
+@media screen and (max-width: 1024px) and (min-width: 0px){
     .block h2 {
         grid-area: title;
     }
@@ -76,9 +76,10 @@ button {
         display:flex;
         flex-direction:column;
     }
+
 }
 
-@media screen and (max-width: 900px) and (min-width: 651px) {
+@media screen and (max-width: 1024px) and (min-width: 651px) {
     .block{
         display: grid;
         grid-template-columns: auto auto;
@@ -87,6 +88,7 @@ button {
         "title title"
         "art art"
         "bot bot";
+        grid-gap:50px;
     }
 
 }
