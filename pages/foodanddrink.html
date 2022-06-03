@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="../styles/foodanddrink.css">
         <link rel="stylesheet" href="../styles/nav.css" type="text/css">
+        <script src="../scripts/script.js"></script>
         <title>Our Menu</title>
       </head>
 
@@ -30,16 +31,24 @@
             <img src="../Media/Images/Nav/Mobile-Header.png" class="mob">
 
         <ul class="bottom">
-            <li class="Pizzas"><a href="../pages/foodanddrink.html">Pizzas</a></li>
-            <li class="Drinks"><a href="../pages/foodanddrink.html">Drinks</a></li>
-            <li class="Desserts"><a href="../pages/foodanddrink.html">Desserts</a></li>
-            <li class="Sides"><a href="../pages/foodanddrink.html">Sides</a></li>
+            <li class="Pizzas">
+                <a onClick="scrollPage('pizzas')">Pizzas</a>
+            </li>
+            <li class="Drinks">
+                <a onClick="scrollPage('drinks')">Drinks</a>
+            </li>
+            <li class="Desserts">
+                <a onClick="scrollPage('desserts')">Desserts</a>
+            </li>
+            <li class="Sides">
+                <a onClick="scrollPage('sides')">Sides</a>
+            </li>
         </ul>
     </nav>
 
     
 
-    <section class="pizzas block">
+    <section class="pizzas block" id="pizzas">
 
         <h2 class="text-style">Pizzas</h2>
 
@@ -82,7 +91,7 @@
 
     
 
-    <section class="sides block">
+    <section class="sides block" id="sides">
         
         <h2 class="text-style">Sides</h2>
 
@@ -122,7 +131,7 @@
 
 
 
-    <section class="dips block">
+    <section class="dips block" id="dips">
 
         <h2 class="text-style">Dips</h2>
 
@@ -153,7 +162,7 @@
         </article>
     </section>
 
-    <section class="drinks block">
+    <section class="drinks block" id="drinks">
         <h2 class="text-style">Drinks</h2>
 
         <article class="item-">
@@ -188,7 +197,7 @@
         </article>
     </section>
 
-    <section class="desserts block">
+    <section class="desserts block" id="desserts">
         <h2 class="text-style">Desserts</h2>
 
         <article class="item-">
@@ -214,4 +223,6 @@
     </section>
 
 </body>
+
+
 </html>
