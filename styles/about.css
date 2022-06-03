@@ -4,7 +4,7 @@ body {
   margin-top: 100px;
 }
 
-section{
+section {
   font-family: 'Carrois Gothic SC', sans-serif;
 
   margin-top: 100px;
@@ -14,31 +14,32 @@ section{
   text-align: center;
   font-size: 24pt;
   background-color: black;
-  color:white;
+  color: white;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 1fr auto auto;
   grid-template-areas:
-  "tit  tit"
-  "left right"
-  "left right";
+    "tit  tit"
+    "left right"
+    "left right";
   border-radius: 7.5%;
   overflow: hidden;
 }
 
-section h2{
+section h2 {
   grid-area: tit;
   padding-bottom: 30px;
 }
 
-article p{
-  color:white;
+article p {
+  color: white;
   padding: 5%;
 }
 
 .left {
   grid-area: left;
 }
+
 .right {
   grid-area: right;
 }
@@ -53,13 +54,13 @@ footer p {
 }
 
 footer {
-  display:flex;
+  display: flex;
   margin-top: auto;
   text-align: center;
   align-items: center;
   background-color: black;
   color: white;
-  padding:10px;
+  padding: 10px;
   border-radius: 15px;
   margin-bottom: 20px;
 }
@@ -70,7 +71,8 @@ footer {
     margin-left: 20px;
     margin-right: 20px;
   }
-  section{
+
+  section {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -100,6 +102,7 @@ footer {
   .info img {
     max-width: 800px;
   }
+
   section {
     display: flex;
     flex-direction: column;

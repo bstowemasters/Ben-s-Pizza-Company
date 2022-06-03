@@ -17,13 +17,14 @@ section {
     height: fit-content;
     padding: 50px;
     border-radius: 20px;
-    
+
 }
+
 a {
     color: aqua;
 }
 
-article > * {
+article>* {
     color: white;
 }
 

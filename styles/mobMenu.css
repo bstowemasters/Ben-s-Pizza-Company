@@ -29,8 +29,10 @@ ul {
 /* Animation to slide menu from top of screen */
 @keyframes slideFromTop {
     0% {
-        transform: translateY(-100%);   /* Defines starting point */
+        transform: translateY(-100%);
+        /* Defines starting point */
     }
+
     100% {
         transform: translateY(0);
     }
@@ -44,18 +46,19 @@ ul li {
     list-style-type: none;
 }
 
-li > * {
+li>* {
     color: white;
     padding: 20px;
     text-decoration: none;
 }
 
-a:hover, a:focus {
-    color:#aff;
+a:hover,
+a:focus {
+    color: #aff;
     text-shadow: none;
     -webkit-transition: 500ms linear 0s;
-	-moz-transition: 500ms linear 0s;
-	-o-transition: 500ms linear 0s;
-	transition: 500ms linear 0s;
-	outline: 0 none;
+    -moz-transition: 500ms linear 0s;
+    -o-transition: 500ms linear 0s;
+    transition: 500ms linear 0s;
+    outline: 0 none;
 }

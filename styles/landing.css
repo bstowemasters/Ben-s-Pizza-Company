@@ -1,10 +1,12 @@
-html, body {
+html,
+body {
     background-color: #000000;
     height: 100vh;
 }
+
 body {
     min-width: 1280px;
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 body {
@@ -21,7 +23,8 @@ h1 {
     font-size: 64px;
 }
 
-h1, p {
+h1,
+p {
     margin-left: auto;
     margin-right: auto;
     width: 10em;
@@ -48,40 +51,46 @@ h1, p {
     border-radius: 15px;
 }
 
-.openTime{
+.openTime {
     padding: 30px;
 }
 
 .button {
     border-radius: 15px;
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
+    /* Green */
     border: 2px solid white;
     color: white;
     padding: 15px 32px;
     text-decoration: none;
     font-size: 16px;
-  }
+}
 
-  .button:hover {
-      border: 3px solid green;
-  }
+.button:hover {
+    border: 3px solid green;
+}
 
-  @media screen and (max-width: 1080px) and (min-width: 0px) {
-      body{
-          min-width: 0px;
-          filter: invert(100%);
-      }
-      .centered {
-          width: 100%;
-      }
-      p, h1 {
-          padding: 0;
-      }
-      h1 {
-          font-size: larger;
-      }
-      .opening-hours {
-          position: relative;
-      }
+@media screen and (max-width: 1080px) and (min-width: 0px) {
+    body {
+        min-width: 0px;
+        filter: invert(100%);
+    }
 
-  }
+    .centered {
+        width: 100%;
+    }
+
+    p,
+    h1 {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: larger;
+    }
+
+    .opening-hours {
+        position: relative;
+    }
+
+}
