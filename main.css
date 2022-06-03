@@ -14,9 +14,6 @@
 /* Ignore styling above this. This simply styles the container and div create equal squares */
 /* Solution from here, note .container adds additional styling to the above selector */
 
-.container {
-	
-}
 
 .red {
 	background-color: red;
