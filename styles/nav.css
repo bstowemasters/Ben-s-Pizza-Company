@@ -116,7 +116,7 @@ li a {
 
 @media screen and (max-width: 899px) and (min-width: 420px) {
   .upper {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-items: center;
 
@@ -129,7 +129,7 @@ li a {
   img.mob {
     display: block;
     grid-area: midd;
-    min-width:400px;
+    min-width: 400px;
   }
 
   .mobile { 
@@ -138,7 +138,7 @@ li a {
   }
 
   .mobile img {
-    height:32px;
+    height: 32px;
 
   }
   li a {
@@ -147,12 +147,14 @@ li a {
   }
  
   .nutrition, .contact, .about, .Pizzas, .Drinks, .Sides, .home, .Desserts 
-  { display:none; }
+  { display: none; }
 
   .title { grid-area: title; }  
+  
   .title {
     padding: 20px;
   }
+  
   h2.title{
     margin: 0;
   }

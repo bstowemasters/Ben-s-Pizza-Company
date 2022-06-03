@@ -38,7 +38,7 @@ button:hover {
 }
 
 h2 {
-    grid-area:  tit;
+    grid-area: tit;
     display: flex;
     align-self: center;
 }
@@ -54,11 +54,15 @@ article p{
 
 button {
     margin-top: 20px;
-    background-color:green;
+    background-color: green;
     min-width: 110px;
     max-width: 110px;
     min-height: 30px;
     border-radius: 18px;
+}
+
+a {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1320px ) {
@@ -73,8 +77,8 @@ button {
         grid-area: title;
     }
     .block article {
-        display:flex;
-        flex-direction:column;
+        display: flex;
+        flex-direction: column;
     }
 
 }
@@ -88,7 +92,7 @@ button {
         "title title"
         "art art"
         "bot bot";
-        grid-gap:50px;
+        grid-gap: 50px;
     }
 
 }

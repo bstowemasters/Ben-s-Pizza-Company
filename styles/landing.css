@@ -68,11 +68,11 @@ h1, p {
 
   @media screen and (max-width: 1080px) and (min-width: 0px) {
       body{
-          min-width:0px;
+          min-width: 0px;
           filter: invert(100%);
       }
       .centered {
-          width:100%;
+          width: 100%;
       }
       p, h1 {
           padding: 0;
