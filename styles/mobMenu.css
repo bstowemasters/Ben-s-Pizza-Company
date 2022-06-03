@@ -1,0 +1,63 @@
+* {
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+body {
+    background-image: url("../Media/Images/background.jpg");
+    background-repeat: repeat;
+    background-size:auto;
+    color: #fff;
+}
+
+ul {
+    animation: 1s ease-out 0s 1 slideFromTop;
+    background-color: black;
+    width: 80vw;
+    height: 80vh;
+    font-size: 32pt;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Animation to slide menu from top of screen */
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-100%);   /* Defines starting point */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.mobile img {
+    height: 64px;
+}
+
+
+
+ul li {
+    list-style-type: none;
+}
+
+li > * {
+    color:white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.title h2 {
+    align-items:flex-start;
+}
+a:hover, a:focus {
+    color:#aff;
+    text-shadow: none;
+    -webkit-transition: 500ms linear 0s;
+	-moz-transition: 500ms linear 0s;
+	-o-transition: 500ms linear 0s;
+	transition: 500ms linear 0s;
+	outline: 0 none;
+}
