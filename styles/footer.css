@@ -3,7 +3,7 @@ footer p {
     color: white;
   }
   
-  footer {
+  footer {          /* Styling to center footer content and adjust text and background colours */
     display: flex;
     margin-top: auto;
     text-align: center;

@@ -1,22 +1,21 @@
 html,
 body {
     background-color: #000000;
-    height: 100vh;
+    height: 100vh;                  /* Sets the height of the content to the size of the window */
 }
 
 body {
-    min-width: 1280px;
+    min-width: 1280px;              /* Sets the max width of content before the content isn't resized */
     margin: 0 auto;
 }
 
 body {
-    background-image: url("../media/Images/background.jpg");
+    background-image: url("../media/Images/background.jpg");    /* Loads in local image file */
     background-size: auto;
     background-repeat: auto;
     color: white;
     text-align: center;
     font-size: 26px;
-
 }
 
 h1 {
@@ -25,30 +24,30 @@ h1 {
 
 h1,
 p {
-    margin-left: auto;
+    margin-left: auto;      /* Centers paragraphs to container */
     margin-right: auto;
-    width: 10em;
+    width: 10em;            /* Specifies manual width */
     color: white;
 }
 
-.opening-hours {
+.opening-hours {            /* Centering of content */
     top: 50%;
     /* height: 600px; */
     position: relative;
-    /* border: 3px solid green; */
+    /* border: 3px solid green; - Used for checking position */
 
 }
 
-.centered {
+.centered {                 /* Class applied to elements to be centered */
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 50%;               /* Centers positioning of content without using grids / flex containers */
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: black;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 15px;    /* Rounded corners */
 }
 
 .openTime {
@@ -59,7 +58,7 @@ p {
     border-radius: 15px;
     background-color: #4CAF50;
     /* Green */
-    border: 2px solid white;
+    border: 2px solid white;    /* Adds solid border to buttons to seperate from content */
     color: white;
     padding: 15px 32px;
     text-decoration: none;
@@ -67,26 +66,26 @@ p {
 }
 
 .button:hover {
-    border: 3px solid green;
+    border: 3px solid green;    /* Adds hover effect */
 }
 
-@media screen and (max-width: 1080px) and (min-width: 0px) {
+@media screen and (max-width: 1080px) and (min-width: 0px) {    /* Checks for smaller screen sizes */
     body {
         min-width: 0px;
-        filter: invert(100%);
+        filter: invert(100%);   /* Inverts background colour when viewing on mobile */
     }
 
     .centered {
-        width: 100%;
+        width: 100%;            /* Assigns width of container to page width for smaller devices */
     }
 
     p,
     h1 {
-        padding: 0;
+        padding: 0;             /* Removes any padding assigned on desktop views */
     }
 
     h1 {
-        font-size: larger;
+        font-size: larger;      /* Enlarges text for easy reading on smaller screens */
     }
 
     .opening-hours {

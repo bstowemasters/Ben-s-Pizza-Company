@@ -1,4 +1,4 @@
-* {
+* {                   /* Remove any default styles, center element and set max width */
   margin: 0;
   padding: 0;
   max-width: 1280px;
@@ -17,23 +17,23 @@ nav {
 }
 
 nav h2 {
-  font-size: 26pt;
+  font-size: 26pt;  /* Manual font size specification */
 }
 
 .mobile,
 .mob {
-  display: none;
+  display: none;  /* Hides mobile content as default */
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none;  /* Removes ugly default styles (bullet point / underline) */
 }
 
 .container>* {
-  white-space: nowrap;
+  white-space: nowrap;    /* Allow content to fit within conatiner */
 }
 
-.container {
+.container {              /* Assign css grid areas and column/row sizes for desktop view */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -41,17 +41,17 @@ a {
   background-color: black;
   padding: 0;
   margin: 0;
-  height: 450px;
-  position: sticky;
+  height: 450px;        /* Manual height specification */
+  position: sticky;     /* Allows the nav bar to stick to the top of the page on desktop */
   top:0;
 }
 
 .img {
-  min-width: 850px;
+  min-width: 850px;     /* Makes sure the image is no wider than the space it sits in */
 }
 
 .upper {
-  grid-area: head;
+  grid-area: head;      /* Assignment of grid areas for each element */
 }
 
 .img {
@@ -62,15 +62,15 @@ a {
   grid-area: bott;
 }
 
-.upper {
+.upper {                /* New nested CSS grid to align menu options in a seperate layout */
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);  /* Assigns 8 fractions of the screen to columns */
   grid-template-areas:
     "home title title title title nutrition contact about"
   ;
   align-items: center;
-  justify-items: center;
+  justify-items: center;                  /* Vertically and horizontally centers content in the grid */
 
 }
 
@@ -78,12 +78,12 @@ a {
   color: white;
 }
 
-.bottom {
+.bottom {               /* Additional CSS grid conatiner to layout items separately to main grid */
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;     /* auto defines row height */
+  grid-template-columns: repeat(4, 1fr);  /* Assigns collumns into 4 sections */
   grid-template-areas:
-    "Pizza Side Drink Dessert"
+    "Pizza Side Drink Dessert"  /* Assigns grid area names for ease of assingment later */
   ;
   justify-items: center;
   align-items: center;
@@ -96,7 +96,7 @@ a {
 }
 
 .home {
-  grid-area: home;
+  grid-area: home;              /* More grid-area assignment */
 }
 
 .title {
@@ -134,7 +134,7 @@ a {
 .nutrition,
 .contact,
 .about {
-  justify-self: end;
+  justify-self: end;  /* Allows last three buttons to stick to the end of the container (right hand side) */
 }
 
 li {
@@ -146,9 +146,9 @@ li a {
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: none; /* Removes any default styles (bullet points) */
   margin: 0;
-  padding: 0;
+  padding: 0;             /* Remove any margin/padding which has been applied to all elements */
 }
 
 li a {
@@ -159,11 +159,11 @@ li a {
 }
 
 
-@media screen and (max-width: 899px) and (min-width: 0px) {
-  .upper {
+@media screen and (max-width: 899px) and (min-width: 0px) { /* Checks screen size */
+  .upper {                  /* Displays flex container instead of CSS grid */
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-items: center;  /* Centralises items */
   }
 
   .container {
@@ -171,27 +171,27 @@ li a {
   }
 
   nav h2 {
-    font-size: 16pt;
+    font-size: 16pt;        /* Font-size adjust for mobile platforms */
   }
 
   .img {
-    display: none;
+    display: none;          /* Hides image (too big for mobile views) */
 
   }
 
   img.mob {
-    display: block;
-    grid-area: midd;
-    min-width: 200px;
+    display: block;         /* Shows cropped image which is better displayed on a mobile device */
+    grid-area: midd;        /* Assigns grid location */
+    min-width: 200px;       /* New min-width for mobile device */
   }
 
   .mobile {
-    margin-right: auto;
-    display: contents;
+    margin-right: auto;     /* Auto centering */
+    display: contents;      /* Shows mobile content (button) */
   }
 
   .mobile img {
-    height: 32px;
+    height: 32px;           /* Stops huge menu icon, appropriate manual sizing specified */
 
   }
 
@@ -207,7 +207,7 @@ li a {
   .Pizzas,
   .Drinks,
   .Sides,
-  .home,
+  .home,        /* Hides desktop conent - this has been moved to a menu html file */
   .Desserts {
     display: none;
   }
@@ -228,12 +228,12 @@ li a {
 
 @media screen and (max-width: 360px) {
   .title {
-    display: none;
+    display: none;  /* Hides title for weird tiny devices */
   }
   a {
-    margin: auto;
+    margin: auto;   /* Attempts to center menu button */
   }
   ul {
-    margin: auto;
+    margin: auto;   /* Fixes some additional centering issues */
   }
 }

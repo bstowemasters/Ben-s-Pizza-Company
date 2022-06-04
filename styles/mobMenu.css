@@ -1,5 +1,5 @@
 * {
-    font-family: 'Carrois Gothic SC', sans-serif;
+    font-family: 'Carrois Gothic SC', sans-serif;   /* Uses font */
 }
 
 body {
@@ -12,9 +12,9 @@ body {
 ul {
     padding: 20px;
     margin: 0;
-    animation: 1s ease-out 0s 1 slideFromTop;
+    animation: 1s ease-out 0s 1 slideFromTop;   /* Animation calling slideFromTop */
     background-color: black;
-    width: 80vw;
+    width: 80vw;                                /*  */
     height: 80vh;
     font-size: 32pt;
 
@@ -29,17 +29,17 @@ ul {
 /* Animation to slide menu from top of screen */
 @keyframes slideFromTop {
     0% {
-        transform: translateY(-100%);
-        /* Defines starting point */
+        transform: translateY(-100%);    /* Defines starting point */
+        
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(0);        /* Position at the end of animation */
     }
 }
 
 .mobile img {
-    height: 64px;
+    height: 64px;                        /* Manual specification of image size for menu icon */
 }
 
 ul li {
@@ -56,7 +56,7 @@ a:hover,
 a:focus {
     color: #aff;
     text-shadow: none;
-    -webkit-transition: 500ms linear 0s;
+    -webkit-transition: 500ms linear 0s;        /* Adds hover effect to links (buttons) */
     -moz-transition: 500ms linear 0s;
     -o-transition: 500ms linear 0s;
     transition: 500ms linear 0s;

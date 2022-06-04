@@ -16,14 +16,14 @@ section {
   background-color: black;
   color: white;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto; /* Allows automatic resizing of columns to fit content */
   grid-template-rows: 1fr auto auto;
   grid-template-areas:
     "tit  tit"
-    "left right"
+    "left right"    /* Grid areas for content to be mapped */
     "left right";
   border-radius: 20px;
-  overflow: auto;
+  overflow: auto;   /* Stops content overlapping container */
 }
 
 section h2 {
@@ -38,7 +38,7 @@ article p {
 }
 
 .left {
-  grid-area: left;
+  grid-area: left;  /* Assings grid area to elements */
 }
 
 .right {
@@ -46,7 +46,7 @@ article p {
 }
 
 article img {
-  max-width: 600px;
+  max-width: 600px; /* Allows image to consume half of the full container width */
   border-radius: 15px;
 }
 
@@ -90,12 +90,12 @@ article img {
     max-width: 800px;
   }
   article img {
-    max-width: 360px;
+    max-width: 360px; /* Allowing images to be displayed on smaller screens */
   }
 
   section {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Shows single row of items */
     padding: 10px;
 
   }

@@ -1,6 +1,5 @@
 function scrollPage(value) {
     const element = document.getElementById(value);
-    console.log(value);
 
     window.scrollTo({   /* Smooth scrolling function with offset */
         behavior: 'smooth', /* Adds smooth behaviour */

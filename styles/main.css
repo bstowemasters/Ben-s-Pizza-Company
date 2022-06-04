@@ -1,11 +1,11 @@
 @import url(font.css);
 
-* {
+* {             /* Removes default margins */
     margin: 0;
     padding: 0;
 }
 
-html * {
+html * {        /* Asigns font and size */
     font-size: 1em;
     font-family: 'Carrois Gothic SC', sans-serif;
     color: #000;
