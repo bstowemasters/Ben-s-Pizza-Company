@@ -12,6 +12,8 @@ nav {
   overflow: hidden;
   /* Prevents clipping issue for border radius */
   border-radius: 30px;
+  background: white;
+
 }
 
 nav h2 {
@@ -81,7 +83,7 @@ a {
   grid-template-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
-    "Pizza Drink Side Dessert"
+    "Pizza Side Drink Dessert"
   ;
   justify-items: center;
   align-items: center;
@@ -157,12 +159,15 @@ li a {
 }
 
 
-@media screen and (max-width: 899px) and (min-width: 200px) {
+@media screen and (max-width: 899px) and (min-width: 0px) {
   .upper {
     display: flex;
     align-items: center;
     justify-items: center;
+  }
 
+  .container {
+    position: relative;
   }
 
   nav h2 {
@@ -219,4 +224,16 @@ li a {
     margin: 0;
   }
 
+}
+
+@media screen and (max-width: 360px) {
+  .title {
+    display: none;
+  }
+  a {
+    margin: auto;
+  }
+  ul {
+    margin: auto;
+  }
 }

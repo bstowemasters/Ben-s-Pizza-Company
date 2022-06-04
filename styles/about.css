@@ -29,6 +29,7 @@ section {
 section h2 {
   grid-area: tit;
   padding-bottom: 30px;
+  color: white;
 }
 
 article p {

@@ -39,6 +39,11 @@ section {
     color: black;
 }
 
+.left h2 {
+    text-align: center;
+    color: white;
+    font-size: 36pt;
+}
 .content h2 {
     padding-bottom: 30px;
 }
@@ -70,6 +75,16 @@ input:invalid {
     .left img {
         max-width: 400px;
     }
+    .left h2 {
+        font-size: 24pt;
+    }
+}
 
-
+@media screen and (max-width: 380px) {
+    .left img {
+        display: none;
+    }
+    input, textarea {
+        width:100%;
+    }
 }

@@ -11,8 +11,6 @@ body {
     margin-bottom: 100px;
 }
 
-
-
 article img {
     border-radius: 30px;
 }
@@ -47,6 +45,10 @@ h2 {
 article {
     display: flex;
     flex-direction: column;
+}
+
+article > * {
+    color: white;
 }
 
 article p {
